@@ -78,6 +78,7 @@ export async function fetchCars(filters: FilterProps) {
 }
 
 export const generateCarImageUrl = (car: CarProps, angle?: string) => {
+ // const key = new Key("usissakiacompany");
   const url = new URL("https://cdn.imagin.studio/getimage");
   const { make, model, year } = car;
 

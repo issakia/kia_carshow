@@ -1,7 +1,7 @@
 import { fetchCars } from "../utils";
 import { HomeProps } from "../types";
 import { fuels, yearsOfProduction } from "../constants";
-import { CarCard, ShowMore, SearchBar, CustomFilter, Hero } from "../components";
+import { CarCard, Contact, ShowMore, SearchBar, CustomFilter, Hero } from "../components";
 
 export default async function Home({ searchParams }: HomeProps) {
   const allCars = await fetchCars({
@@ -20,8 +20,10 @@ export default async function Home({ searchParams }: HomeProps) {
 
       <div className='mt-12 padding-x padding-y max-width' id='discover'>
         <div className='home__text-container'>
-          <h1 className='text-4xl font-extrabold'>Car Catalogue</h1>
-          <p>Explore out cars you might like</p>
+          {/* <h1 className='text-4xl font-extrabold'>Car Catalogue</h1>
+          <p>Explore out cars you might like</p> */}
+          <h1 className='text-4xl font-extrabold'>نمایش خودروها</h1>
+          <p>خودروی مورد نظر رو انتخاب کنید</p>
         </div>
 
         <div className='home__filters'>
@@ -48,10 +50,12 @@ export default async function Home({ searchParams }: HomeProps) {
           </section>
         ) : (
           <div className='home__error-container'>
-            <h2 className='text-black text-xl font-bold'>Oops, no results</h2>
+            {/* <h2 className='text-black text-xl font-bold'>Oops, no results</h2> */}
+            <h2 className='text-black text-xl font-bold'>متاسفانه موردی یافت نشد</h2>
             <p>{allCars?.message}</p>
           </div>
         )}
+        <Contact />
       </div>
     </main>
   );

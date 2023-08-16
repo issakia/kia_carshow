@@ -60,6 +60,10 @@ export const fuels = [
     title: "Fuel",
     value: "",
   },
+  // {
+  //   title: "هیبرید",
+  //   value: "Hybrid",
+  // },
   {
     title: "Gas",
     value: "Gas",
@@ -72,30 +76,30 @@ export const fuels = [
 
 export const footerLinks = [
   {
-    title: "About",
+    title: "درباره",
     links: [
-      { title: "How it works", url: "/" },
-      { title: "Featured", url: "/" },
-      { title: "Partnership", url: "/" },
-      { title: "Bussiness Relation", url: "/" },
+      { title: "نحوه ثبت نام", url: "/signin" },
+      { title: "جزییات", url: "/details" },
+      { title: "شرکا", url: "/partners" },
+      { title: "اطلاعات اقتصادی", url: "/business" },
     ],
   },
   {
-    title: "Company",
+    title: "شرکت",
     links: [
-      { title: "Events", url: "/" },
-      { title: "Blog", url: "/" },
-      { title: "Podcast", url: "/" },
-      { title: "Invite a friend", url: "/" },
+      { title: "اخبار", url: "/events/" },
+      { title: "وبلاگ", url: "/blog/" },
+      { title: "پادکست", url: "/podcast/" },
+      { title: "دعوت از دوستان", url: "/invite/" },
     ],
   },
   {
-    title: "Socials",
+    title: "مدیا",
     links: [
-      { title: "Discord", url: "/" },
-      { title: "Instagram", url: "/" },
-      { title: "Twitter", url: "/" },
-      { title: "Facebook", url: "/" },
+      { title: "لینکداین", url: "/discord" },
+      { title: "اینستاگرام", url: "/instagram/" },
+      { title: "توییتر", url: "/twitter/" },
+      { title: "واتس آپ", url: "/whatapp/" },
     ],
   },
 ];
